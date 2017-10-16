@@ -15,6 +15,36 @@ body {
   padding-bottom: 1.5rem;
 }
 
+/* Custom login page background */
+body.login {
+    background-image: url("../images/backgroundLogin.png");
+    background-color: #2d2d2e;
+    color: #fff;
+}
+
+/* Custom login button */
+.btn-danger-modified {
+  color: #fff;
+  background-color: #ed2241;
+  border-color: #ed2241;
+}
+
+input[type='text'].login, input[type='password'].login {
+  background-color : rgba(45,45,46, 0.5);
+  color: #ccc;
+}
+
+a.login {
+  color: #fff;
+}
+
+img.logo {
+  width: 50px;
+  heigth: auto;
+}
+
+
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
