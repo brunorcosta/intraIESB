@@ -9,10 +9,13 @@
   padding: 0.2em 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 /* Space out content a bit */
 body {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  font-family: Museo !important;
 }
 
 /* Custom login page background */
@@ -43,7 +46,50 @@ img.logo {
   heigth: auto;
 }
 
+.navbar-fixed-left {
+  width: 65px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
 
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 64px;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 65px;
+}
+
+.navbar-fixed-left + .navbar {
+  margin-left: 65px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 34, 65, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");  
+}
+
+.no-border {
+  border-style: none;
+}
+
+.perfil p, .matricula p {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+  margin-top: -50px;
+  margin-left: 65px;
+}
+
+/* Custom font */
+@font-face {
+    font-family: Museo;
+    src: url(../fonts/Museo-500.otf);
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,

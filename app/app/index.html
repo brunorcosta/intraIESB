@@ -1,86 +1,89 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Intranet IESB</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Intranet IESB</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container-fluid">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Link 1</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Link 2</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Link 3</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">Intranet IESB</h3>
+    <nav class="navbar navbar-inverse navbar-expand-md navbar-fixed-left navbar-dark bg-dark">
+    </nav>
+
+    <nav class="navbar navbar-light bg-light navbar-fixed-top justify-content-between">
+      <div class="perfil">
+        <p>André Imbroisi</p>
+        <p class="small">Professor</p>
+      </div>
+      <div class="matricula">
+        <p>&nbsp;</p>
+        <p class="small">1614240017</p>
+      </div>
+      <div class="email" >
+        <img class="logo" src="./images/email.svg" />
       </div>
 
-      <div class="jumbotron">
-        <h1>Header H1 - puro</h1>
-        <h2>Header H2 - puro</h2>
-        <h3>Header H3 - puro</h3>
-        <h4>Header H4 - puro</h4>
-        <h5>Header H5 - puro</h5>
-        <h6>Header H6 - puro</h6>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" aria-label="Pesquisa">
+        <button class="custom-toggler navbar-toggler no-border" type="button" data-toggle="modal" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </form>
+    </nav>
 
-        <h1 class="display-1">Header H1</h1>
-        <h1 class="display-2">Header H1</h1>
-        <h1 class="display-3">Header H1</h1>
-        <h1 class="display-4">Header H1</h1>
-        
-        <p>Parágrafo - puro</p>
-        <p class="lead">Parágrafo (class="lead")</p>
-        <a class="btn btn-success" href="#">Botão</a>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Header H4</h4>
-          <p>Parágrafo</p>
-
-          <h4>Header H4</h4>
-          <p>Parágrafo</p>
-
-          <h4>Header H4</h4>
-          <p>Parágrafo</p>
-
-          <h4>Header H4</h4>
-          <p>Parágrafo</p>
+    <div class="modal" id="menu">
+      <div class="bg-dark p-4">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <h1 class="text-white">Menu</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+              <h2 class="text-white">Eventos</h2>
+              <h2 class="text-white">Eventos</h2>
+              <h2 class="text-white">Eventos</h2>
+              <h2 class="text-white">Eventos</h2>
+              <h2 class="text-white">Eventos</h2>
+            </div>
+            <div class="col">
+              <h2 class="text-white"></h2>
+            </div>
+            <div class="col">
+              <h2 class="text-white">Ver Todos</h2>
+            </div>
+            <div class="col">
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="footer">
-        <p>Rodapé</p>
+        
       </div>
     </div>
+    
+
+    
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -108,4 +111,4 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
-</html>
+  </html>
