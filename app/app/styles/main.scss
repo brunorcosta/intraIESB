@@ -42,8 +42,8 @@ a.login {
 }
 
 img.logo {
-  width: 50px;
-  heigth: auto;
+  width: 100%;
+  height: auto;
 }
 
 .navbar-fixed-left {
@@ -67,7 +67,8 @@ img.logo {
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 34, 65, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");  
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 34, 65, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h24M4 14h24M4 21h24'/%3E%3C/svg%3E");  
+  // M4 8h24M4 16h24M4 24h24
 }
 
 .no-border {
@@ -83,6 +84,21 @@ img.logo {
 .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
   margin-top: -50px;
   margin-left: 65px;
+}
+
+#email {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.box-shadow {
+  box-shadow: 2px 3px 5px #AAA;
+}
+
+@media screen and (min-width: 576px) {
+  .search-input {
+      min-width: 300px;
+  }
 }
 
 /* Custom font */
