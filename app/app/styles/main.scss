@@ -1,21 +1,17 @@
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
+@import "bower_components/slick-carousel/slick/slick-theme.scss";
 // endbower
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
 
 html, body {
   height: 100%;
+  background-image: url("../images/backgroundFlow.png");
 }
 
 /* Space out content a bit */
 body {
-  font-family: Museo !important;
+  font-family: Museo500 !important;
 }
 
 /* Custom login page background */
@@ -23,6 +19,49 @@ body.login {
     background-image: url("../images/backgroundLogin.png");
     background-color: #2d2d2e;
     color: #fff;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+body.login h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+a {
+  position: relative;
+}
+a::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#menu a {
+  color: #fff;
+}
+
+#menu a:hover {
+  color: #ddd;
 }
 
 /* Custom login button */
@@ -41,9 +80,23 @@ a.login {
   color: #fff;
 }
 
+.navbar-fixed-top {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
 img.logo {
-  width: 100%;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 5rem;
   height: auto;
+  background-size: 100%;
+  z-index: 2147483647;
+  opacity: 0.7;
+  max-width: 2rem;
 }
 
 .navbar-fixed-left {
@@ -51,15 +104,8 @@ img.logo {
   position: fixed;
   border-radius: 0;
   height: 100%;
-}
-
-.navbar-fixed-left .navbar-nav > li {
-  float: none;  /* Cancel default li float: left */
-  width: 64px;
-}
-
-.navbar-fixed-left + .container {
-  padding-left: 65px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .navbar-fixed-left + .navbar {
@@ -67,8 +113,11 @@ img.logo {
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 34, 65, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h24M4 14h24M4 21h24'/%3E%3C/svg%3E");  
-  // M4 8h24M4 16h24M4 24h24
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 34, 65, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h24M4 14h24M4 21h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler:focus {
+  outline: 0px;
 }
 
 .no-border {
@@ -91,8 +140,78 @@ img.logo {
   width: 2.2rem;
 }
 
+#email img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-left-icon {
+  width: 65px;
+  height: 100%;
+}
+
+.navbar-left-icon a {
+  height: 100%;
+  width: auto;
+}
+
+.navbar-left-icon svg{
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+.navbar-left-icon svg:hover {
+  background-color: #333333; 
+}
+
+.navbar-left-icon svg:hover *{ 
+  fill: #ed2241;
+}
+
+.navbar-left-icon .st0 {
+  fill: #F8F9FA;
+}
+
 .box-shadow {
   box-shadow: 2px 3px 5px #AAA;
+}
+
+.flow {
+  padding: 0 1rem 0 1rem;
+  margin-left: 65px;
+}
+
+.flow section {
+  padding: 1rem 3rem 1rem 3rem;
+  overflow: hidden;
+
+  // -webkit-transform: translateZ( 0 );
+  // transform: translateZ( 0 );
+  // -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  // transition: transform 0.6s ease-in-out;
+  // -webkit-backface-visibility: hidden;
+  // backface-visibility: hidden;
+}
+
+.flow h4 {
+  margin: 0.7rem;
+  float: left;
+  position: absolute;
+  top: 0px;
+}
+
+h4 > small {
+  font-family: Museo300 !important;
+}
+
+.text-red {
+  color: #ed2241;
+}
+
+.slick-prev:before, .slick-next:before { 
+  color: #333333 !important;
 }
 
 @media screen and (min-width: 576px) {
@@ -103,81 +222,36 @@ img.logo {
 
 /* Custom font */
 @font-face {
-    font-family: Museo;
+  font-family: Museo700;
+  src: url(../fonts/Museo700-Regular.otf);
+}
+
+@font-face {
+    font-family: Museo500;
     src: url(../fonts/Museo-500.otf);
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 1rem;
-  padding-left: 1rem;
+@font-face {
+  font-family: Museo300;
+  src: url(../fonts/Museo300-Regular.otf);
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 1rem;
-  border-bottom: .05rem solid #e5e5e5;
-}
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 3rem;
-}
-
-/* Custom page footer */
-.footer {
+footer {
   padding-top: 1.5rem;
-  color: #777;
-  border-top: .05rem solid #e5e5e5;
+  background-color: #333333;
+  z-index: 1;
 }
 
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-    max-width: 46rem;
-  }
-}
-.container-narrow > hr {
-  margin: 2rem 0;
-}
+// a[ id= "ajuda" ]:target ~ .flow section.slider {
+//   -webkit-transform: translateY( 0px);
+//   transform: translateY( 0px );
+// }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 3rem 0;
-}
-.marketing p + h4 {
-  margin-top: 1.5rem;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 2rem;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
+// a[ id= "galeria" ]:target ~ #main article.panel {
+//   -webkit-transform: translateY( -500px );
+//   transform: translateY( -500px );
+// }
+// a[ id= "contacto" ]:target ~ #main article.panel {
+//   -webkit-transform: translateY( -1000px );
+//   transform: translateY( -1000px );
+// }
