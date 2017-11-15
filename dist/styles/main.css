@@ -58,6 +58,10 @@ a::after {
   color: #ddd;
 }
 
+.bg-red {
+  background-color: #ed2241;
+}
+
 /* Custom login button */
 .btn-danger-modified {
   color: #fff;
@@ -72,6 +76,48 @@ input[type='text'].login, input[type='password'].login {
 
 a.login {
   color: #fff;
+}
+
+.profile-background {
+  position: absolute;
+  z-index: -1;
+  top: -140px;
+  left:0px;
+}
+
+.profile-foreground {
+  position: absolute;
+  z-index: 100;
+  top: 370px;
+  left:0px;
+}
+
+.home-img {
+  position:relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.home-img img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.home-img img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.home-img h4 {
+  float: left;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 4.7rem;
+  left:3rem;
 }
 
 .navbar-fixed-top {
@@ -170,11 +216,23 @@ img.logo {
   fill: #F8F9FA;
 }
 
+.separator {
+  line-height: 1;
+}
+
+.inner-flow-separator {
+  border-top-color:  #000000;
+  border-top-style: solid;
+  border-top-width: 5px;
+  width: 5rem;
+  height: 3.5rem;
+}
+
 .box-shadow {
   box-shadow: 2px 3px 5px #AAA;
 }
 
-.flow {
+.flow, .inner-flow {
   padding: 0 1rem 0 1rem;
   margin-left: 65px;
 }
@@ -189,10 +247,34 @@ img.logo {
   float: left;
   position: absolute;
   top: 0px;
+  text-shadow: 3px 3px 4px #333333;
+}
+
+.flow article {
+  box-shadow: -2px 3px 5px #AAA;
+  border-radius: 10px;
+}
+
+article::after {
+  margin-right: 3px;
 }
 
 h4 > small {
   font-family: Museo300 !important;
+}
+
+.title {
+  font-family: Museo500;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-family: Museo300;
+  letter-spacing: 1px;
+}
+
+.line-height-1 {
+  line-height: 1;
 }
 
 .text-red {
@@ -232,12 +314,13 @@ h4 > small {
 footer {
   margin-left: 65px;
   background-color: #0b020b;
+  background-image: url("../images/footer.png");
   z-index: 1;
   letter-spacing: 1px;
 }
 
 #helpdesk {
-  border-color: #ed2241;;
+  border-color: #ed2241;
   border-style: solid;
   border-width: 5px;
   cursor: pointer;
