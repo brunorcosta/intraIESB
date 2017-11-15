@@ -123,12 +123,6 @@ img.logo {
   padding: 0px;
 }
 
-/* On using dropdown menu (To right shift popuped) */
-.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
-  margin-top: -50px;
-  margin-left: 65px;
-}
-
 #email a {
   height: 2.2rem;
   width: 2.2rem;
@@ -137,6 +131,10 @@ img.logo {
 #email img {
   width: 100%;
   height: auto;
+}
+
+#search {
+  cursor: pointer;
 }
 
 .navbar-left-icon {
@@ -149,7 +147,7 @@ img.logo {
   width: auto;
 }
 
-.navbar-left-icon svg{
+.navbar-left-icon svg {
   transition: 200ms;
   transition-timing-function: ease-in-out;
   -webkit-transition: 200ms;
@@ -184,13 +182,6 @@ img.logo {
 .flow section {
   padding: 1rem 3rem 1rem 3rem;
   overflow: hidden;
-
-  // -webkit-transform: translateZ( 0 );
-  // transform: translateZ( 0 );
-  // -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  // transition: transform 0.6s ease-in-out;
-  // -webkit-backface-visibility: hidden;
-  // backface-visibility: hidden;
 }
 
 .flow h4 {
@@ -229,8 +220,8 @@ h4 > small {
 }
 
 @font-face {
-    font-family: Museo500;
-    src: url(../fonts/museo/Museo-500.otf);
+  font-family: Museo500;
+  src: url(../fonts/museo/Museo-500.otf);
 }
 
 @font-face {
@@ -239,7 +230,15 @@ h4 > small {
 }
 
 footer {
-  padding-top: 1.5rem;
-  background-color: #333333;
+  margin-left: 65px;
+  background-color: #0b020b;
   z-index: 1;
+  letter-spacing: 1px;
+}
+
+#helpdesk {
+  border-color: #ed2241;;
+  border-style: solid;
+  border-width: 5px;
+  cursor: pointer;
 }
