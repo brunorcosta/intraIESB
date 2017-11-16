@@ -98,13 +98,13 @@ a.login {
   border-radius: 10px;
 }
 
-.home-img img {
+.home-img {
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.home-img img:hover {
+.home-img:hover {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -227,6 +227,16 @@ img.logo {
   width: 5rem;
   height: 3.5rem;
 }
+
+.link-hover:hover {
+  transform: scale(1.005);
+  transition: 500ms ease-in-out;
+  -webkit-transform: scale(1.005);
+  -webkit-transition: 500ms ease-in-out;
+  text-shadow: 1px 1px 2px #aaaaaa;
+  cursor: pointer;
+  text-decoration: underline;
+} 
 
 .box-shadow {
   box-shadow: 2px 3px 5px #AAA;
