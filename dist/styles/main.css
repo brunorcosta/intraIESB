@@ -52,11 +52,11 @@ a::after {
 }
 
 a {
-  color: #666666; 
+  color: #444444; 
 }
 
 a:hover {
-  color: #333333; 
+  color: #222222; 
 }
 
 #menu a {
@@ -76,6 +76,12 @@ a:hover {
   color: #fff;
   background-color: #ed2241;
   border-color: #ed2241;
+}
+
+.btn-danger-modified:hover {
+  background-color: #dd2144;
+  border-color: #dd2144;
+  cursor: pointer;
 }
 
 input[type='text'].login, input[type='password'].login {
@@ -160,12 +166,23 @@ img.logo {
   margin-left: 65px;
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 34, 65, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h24M4 14h24M4 21h24'/%3E%3C/svg%3E");
+.custom-toggler {
+  position: fixed;
+  z-index: 2;
+  top: 0.6rem;
+  right: 0.5rem;
 }
 
-.custom-toggler:focus {
-  outline: 0px;
+.custom-toggler:hover {
+  cursor: pointer;
+ }
+ 
+ .custom-toggler:focus {
+   outline: 0px;
+ }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 34, 65, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h24M4 14h24M4 21h24'/%3E%3C/svg%3E");
 }
 
 .no-border {
@@ -248,6 +265,10 @@ img.logo {
 .flow, .inner-flow {
   padding: 0 1rem 0 1rem;
   margin-left: 65px;
+}
+
+.inner-flow p {
+  font-family: Museo300;
 }
 
 .flow section {
