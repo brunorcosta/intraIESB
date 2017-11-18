@@ -52,11 +52,10 @@ Give an example
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
+## Construído com
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Slick](https://maven.apache.org/) - Dependency Management
 
 ## Contributing
 
@@ -66,21 +65,20 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Authors
+## Autores
 
-* **Bruno Costa** - *Initial work* - [Petrukones](https://github.com/petrukones)
-* **Guilherme Gontijo** - *Initial work*
-* **Júlia** - *Initial work*
-* **Phillipe Cedro** - *Initial work*
+* **Bruno Costa** - [petrukones](https://github.com/petrukones)
+* **Guilherme Gontijo**
+* **Júlia**
+* **Phillipe Cedro**
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-## License
+## Licença
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Agradecimentos
 
 * Hat tip to anyone who's code was used
 * Inspiration
-* etc

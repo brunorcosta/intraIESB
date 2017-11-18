@@ -3,12 +3,10 @@ html, body {
   background-image: url("../images/backgroundFlow.png");
 }
 
-/* Space out content a bit */
 body {
   font-family: Museo500 !important;
 }
 
-/* Custom login page background */
 body.login {
     background-image: url("../images/backgroundLogin.png");
     background-color: #2d2d2e;
@@ -39,10 +37,6 @@ h5 {
   font-size: 1rem;
 }
 
-a {
-  position: relative;
-}
-
 a::after {
   content: "";
   top: 0;
@@ -52,11 +46,12 @@ a::after {
 }
 
 a {
-  color: #444444; 
+  color: #c8cbd4; 
+  position: relative;
 }
 
 a:hover {
-  color: #222222; 
+  color: #a5a8b1; 
 }
 
 #menu a {
@@ -71,7 +66,7 @@ a:hover {
   background-color: #ed2241;
 }
 
-/* Custom login button */
+
 .btn-danger-modified {
   color: #fff;
   background-color: #ed2241;
@@ -185,6 +180,11 @@ img.logo {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 34, 65, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h24M4 14h24M4 21h24'/%3E%3C/svg%3E");
 }
 
+.modal-backdrop
+{
+    opacity:0.75 !important;
+}
+
 .no-border {
   border-style: none;
 }
@@ -280,8 +280,8 @@ img.logo {
   margin: 0.7rem;
   float: left;
   position: absolute;
-  top: 0px;
   text-shadow: 3px 3px 4px #333333;
+  z-index: 2;
 }
 
 .flow article {
@@ -306,27 +306,23 @@ h4 > small {
   text-shadow: 3px 3px 4px #ffffff !important;
 }
 
-h4.article-copy {
+.article-copy {
   position: absolute;
   bottom: 1.6rem;
   top: auto;
-  text-shadow: none;
+  text-shadow: none !important;
 }
 
 h4.article-link-md {
-  position: absolute;
   bottom: 1.6rem;
-  left: 25rem;
-  top: auto;
-  text-shadow: none;
+  margin-left: 25rem;
+  text-shadow: none !important;
 }
 
 h4.article-link-lg {
-  position: absolute;
   bottom: 1.6rem;
-  left: 57rem;
-  top: auto;
-  text-shadow: none;
+  margin-left: 57rem;
+  text-shadow: none !important;
 }
 
 h4.link:hover {
@@ -356,8 +352,23 @@ h4.link:hover {
   color: #333333 !important;
 }
 
+.slick-slide img {
+  z-index: -1;
+  transition: 500ms;
+}
+
+.slick-slide img:hover {
+  transform: scale(1.05);
+}
+
 .tooltip {
   font-size: 12px;
+}
+
+.box-oportunidades {
+  border-left-color:  #000000;
+  border-left-style: solid;
+  border-left-width: 3px;
 }
 
 @media screen and (min-width: 576px) {
