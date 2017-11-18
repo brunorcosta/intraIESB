@@ -108,7 +108,6 @@ a.login {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  cursor: pointer;
 }
 
 .home-img h4 {
@@ -229,11 +228,6 @@ img.logo {
 }
 
 .link-hover:hover {
-  transform: scale(1.005);
-  transition: 500ms ease-in-out;
-  -webkit-transform: scale(1.005);
-  -webkit-transition: 500ms ease-in-out;
-  text-shadow: 1px 1px 2px #aaaaaa;
   cursor: pointer;
   text-decoration: underline;
 } 
@@ -263,6 +257,7 @@ img.logo {
 .flow article {
   box-shadow: -2px 3px 5px #AAA;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 article::after {
@@ -271,6 +266,35 @@ article::after {
 
 h4 > small {
   font-family: Museo300 !important;
+}
+
+h4.article-copy {
+  position: absolute;
+  bottom: 1.6rem;
+  top: auto;
+  text-shadow: none;
+}
+
+h4.article-link-md {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 25rem;
+  top: auto;
+  cursor: pointer;
+  text-shadow: none;
+}
+
+h4.article-link-lg {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 57rem;
+  top: auto;
+  cursor: pointer;
+  text-shadow: none;
+}
+
+h4.link:hover {
+  text-decoration: underline;
 }
 
 .title {
