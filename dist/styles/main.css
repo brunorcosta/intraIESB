@@ -297,7 +297,6 @@ h4.article-link-md {
   bottom: 1.6rem;
   left: 25rem;
   top: auto;
-  cursor: pointer;
   text-shadow: none;
 }
 
@@ -306,12 +305,12 @@ h4.article-link-lg {
   bottom: 1.6rem;
   left: 57rem;
   top: auto;
-  cursor: pointer;
   text-shadow: none;
 }
 
 h4.link:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .title {
