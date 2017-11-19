@@ -54,8 +54,9 @@ Add additional notes about how to deploy this on a live system
 
 ## Construído com
 
-* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Slick](https://maven.apache.org/) - Dependency Management
+* [Bootstrap 4](http://getbootstrap.com/) - Front-end component library
+* [Slick](http://kenwheeler.github.io/slick/) - Carousel Slider Plugin
+* [Intro.js](https://introjs.com/) - Step-by-step guide and feature introduction
 
 ## Contributing
 
@@ -69,7 +70,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * **Bruno Costa** - [petrukones](https://github.com/petrukones)
 * **Guilherme Gontijo**
-* **Júlia**
+* **Júlia Vasconcelos**
 * **Phillipe Cedro**
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
