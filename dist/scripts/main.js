@@ -40,17 +40,17 @@ function startIntro() {
             {
                 element: document.querySelector('#noticias'),
                 intro: "Esse é o Flow de Notícias. Todas as novidades estarão aqui e você também poderá ler os comunicados do IESB.",
-                position: 'top'
+                position: 'bottom'
             },
             {
                 element: document.querySelector('#pessoal'),
                 intro: "Esse é o Flow de Pessoal. Os principais serviços para sua vida profissional estarão aqui.",
-                position: 'top'
+                position: 'bottom'
             },
             {
                 element: document.querySelector('#oportunidades'),
                 intro: "Não esquecemos das oportunidades para sua carreira profissional. Elas estarão no Flow de Oportunidades.",
-                position: 'top'
+                position: 'bottom'
             },
             {
                 element: document.querySelector('#ramais'),

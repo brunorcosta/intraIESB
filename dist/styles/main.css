@@ -288,6 +288,9 @@ img.logo {
   box-shadow: -2px 3px 5px #AAA;
   border-radius: 10px;
   overflow: hidden;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -moz-transform: translate3d(0px, 0px, 0px);
+  transform:  translate3d(0px, 0px, 0px);
 }
 
 article::after {
@@ -354,11 +357,15 @@ h4.link:hover {
 
 .slick-slide img {
   z-index: -1;
-  transition: 500ms;
+  transition: all 500ms;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
 }
 
 .slick-slide img:hover {
   transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
 }
 
 .tooltip {
