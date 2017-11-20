@@ -614,11 +614,9 @@
 
       $("article").parent().css("margin-left", "13px");
 
-      $(window).on('load', function () {
-        if (findGetParameter("login") == "true") {
-          $('#home').modal('show');
-        }
-      });
+      if (findGetParameter("login") == "true") {
+        $('#home').modal('show');
+      };      
 
       $('#home').bind('mousewheel', function (event) {
         if (event.originalEvent.wheelDelta < 0) {
