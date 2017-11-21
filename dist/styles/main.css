@@ -1,3 +1,4 @@
+/* Definições Gerais de elementos*/
 html, body {
   height: 100%;
   background-image: url("../images/backgroundFlow.png");
@@ -7,6 +8,8 @@ body {
   font-family: Museo500 !important;
 }
 
+/* Body com classe login - para aplicação na login.html
+   Imagem de fundo da tela de login e cor do texto branca */
 body.login {
     background-image: url("../images/backgroundLogin.png");
     background-color: #2d2d2e;
@@ -17,6 +20,7 @@ h1 {
   font-size: 4.5rem;
 }
 
+/* Header da tela de login menor que da tela do Flow/Home */
 body.login h1 {
   font-size: 2.5rem;
 }
@@ -66,19 +70,21 @@ a:hover {
   background-color: #ed2241;
 }
 
-
+/* Classe do botão vermelho (paleta padrão) da tela de login e texto branco */
 .btn-danger-modified {
   color: #fff;
   background-color: #ed2241;
   border-color: #ed2241;
 }
 
+/* Classe do botão vermelho um pouco mais escuro quando o mouse está sobre ele */
 .btn-danger-modified:hover {
   background-color: #dd2144;
   border-color: #dd2144;
   cursor: pointer;
 }
 
+/* Inputs de login e senha da tela de login com texto cinza claro e fundo preto */
 input[type='text'].login, input[type='password'].login {
   background-color : rgba(45,45,46, 0.5);
   color: #ccc;
@@ -88,54 +94,7 @@ a.login {
   color: #fff;
 }
 
-.profile-background {
-  position: absolute;
-  z-index: -1;
-  top: -140px;
-  left:0px;
-}
-
-.profile-foreground {
-  position: absolute;
-  z-index: 100;
-  top: 370px;
-  left:0px;
-}
-
-.home-img {
-  position:relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.home-img {
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.home-img:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.home-img h4 {
-  float: left;
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  top: 4.7rem;
-  left:3rem;
-}
-
-.navbar-fixed-top {
-  transition: 200ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 200ms;
-  -webkit-transition-timing-function: ease-in-out;
-}
-
+/* Classe utilizada no do IESB na tela de login  */
 img.logo {
   position: fixed;
   right: 1rem;
@@ -148,6 +107,60 @@ img.logo {
   max-width: 2.5rem;
 }
 
+/* Classe usada no modal da Home - linhas atrás da imagem do perfil  */
+.profile-background {
+  position: absolute;
+  z-index: -1;
+  top: -140px;
+  left:0px;
+}
+
+/* Classe usada no modal da Home - linhas na frente da imagem do perfil  */
+.profile-foreground {
+  position: absolute;
+  z-index: 100;
+  top: 370px;
+  left:0px;
+}
+
+/* Divs que contém imagens dos atalhos dispostos ao lado da foto do perfil no modal da Home*/
+.home-img {
+  position:relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/* Motion do aumento de 10% da imagem dos atalhos quando o mouse está sobre a imagem */
+.home-img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Texto sobre as imagens dos atalhos do perfil  */
+.home-img h4 {
+  float: left;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 4.7rem;
+  left:3rem;
+  cursor: pointer;
+}
+
+/* Barra de navegação superior - Ghost Header */
+.navbar-fixed-top {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+/* Barra de navegação lateral */
 .navbar-fixed-left {
   width: 65px;
   position: fixed;
@@ -157,10 +170,12 @@ img.logo {
   margin: 0px;
 }
 
+/* Definição do espaçamento offset (espaçamento) da barra latera com a barra superior para previr sobreposição */
 .navbar-fixed-left + .navbar {
   margin-left: 65px;
 }
 
+/* Menu hamburguer */
 .custom-toggler {
   position: fixed;
   z-index: 2;
@@ -168,18 +183,23 @@ img.logo {
   right: 0.5rem;
 }
 
+/* Barra de navegação superior - Ghost Header */
 .custom-toggler:hover {
   cursor: pointer;
  }
  
+ /* Retirando a borda azul do menu hamburguer quando tem o foco*/
  .custom-toggler:focus {
    outline: 0px;
  }
 
+ /* SVG Inline do ícone do menu hamburguer */
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 34, 65, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h24M4 14h24M4 21h24'/%3E%3C/svg%3E");
 }
 
+ /* Redefinindo a opacidade do backdrop (layer que fica sobre todos os elementos da página atrás) quando abre-se um modal
+    o padrão é 0.5 */
 .modal-backdrop
 {
     opacity:0.75 !important;
@@ -189,6 +209,8 @@ img.logo {
   border-style: none;
 }
 
+/* Retirando as margens e os paddings padrões do Bootstrap para os parágrafos
+   do elementos filhos das classes perfil e matricula */
 .perfil p, .matricula p {
   margin: 0px;
   padding: 0px;
@@ -208,6 +230,7 @@ img.logo {
   cursor: pointer;
 }
 
+/* Classes para os ícones da barra lateral */
 .navbar-left-icon {
   width: 65px;
   height: 100%;
@@ -218,6 +241,7 @@ img.logo {
   width: auto;
 }
 
+/* Motions de transições dos ícones do menu lateral */
 .navbar-left-icon svg {
   transition: 200ms;
   transition-timing-function: ease-in-out;
@@ -229,22 +253,26 @@ img.logo {
   background-color: #333333; 
 }
 
-.navbar-left-icon svg:hover.systemicon *{ 
-  fill: #4286f5;
+/* Cor padrão dos ícones de flow e de sistema do menu lateral */
+.navbar-left-icon .st0 {
+  fill: #F8F9FA;
 }
 
+/* Definindo a cor dos ícones de flow do menu lateral quando o mouse está sobre ele */
 .navbar-left-icon svg:hover.flowicon *{ 
   fill: #ed2241;
 }
 
-.navbar-left-icon .st0 {
-  fill: #F8F9FA;
+/* Definindo a cor dos ícones de sistema do menu lateral quando o mouse está sobre ele */
+.navbar-left-icon svg:hover.systemicon *{ 
+  fill: #4286f5;
 }
 
 .separator {
   line-height: 1;
 }
 
+/* Detalhe gráfico que separa o Título e Subtítulo do conteúdo das páginas externas */
 .inner-flow-separator {
   border-top-color:  #000000;
   border-top-style: solid;
@@ -258,24 +286,30 @@ img.logo {
   text-decoration: underline;
 } 
 
+/* Sombra padrão do menu superior (ghost header) */
 .box-shadow {
   box-shadow: 2px 3px 5px #AAA;
 }
 
+/* Espaçamento padrão dos Flow (página principal após o home) e das Inner-flow (páginas internas) */
 .flow, .inner-flow {
   padding: 0 1rem 0 1rem;
   margin-left: 65px;
 }
 
+/* Parágrafos padrão nas páginas internas é uma fonte mais fina */
 .inner-flow p {
   font-family: Museo300;
 }
 
+/* Cada section (ou cada flow irá virar um slick slider - carrosel) portanto terá
+   overflow:hidden e seu espaçamento maior à direita e à esquerda */
 .flow section {
   padding: 1rem 3rem 1rem 3rem;
   overflow: hidden;
 }
 
+/* Header padrão do Flow */
 .flow h4 {
   margin: 0.7rem;
   float: left;
@@ -284,31 +318,39 @@ img.logo {
   z-index: 2;
 }
 
+/* Padronização do box-shadow   */
 .flow article {
   box-shadow: -2px 3px 5px #AAA;
   border-radius: 10px;
   overflow: hidden;
+  /* abaixo tweak para evitar distorção que ocorre no Safari quando tem motion de scale 
+     de imagem dentro de div com overflow:hidden e border-radius */
   -webkit-transform: translate3d(0px, 0px, 0px);
   -moz-transform: translate3d(0px, 0px, 0px);
   transform:  translate3d(0px, 0px, 0px);
 }
 
+/* Espaçamento após cada artigo de um section do Flow*/
 article::after {
   margin-right: 3px;
 }
 
+/* Subtítulo dos artigo, <h4></h4> será Museo500 e <small></small> dentro de um <h4> será Museo300 */
 h4 > small {
   font-family: Museo300 !important;
 }
 
+/* Prevenir text-shadow, usada nos textos dos articles sobre a barra vermelha e/ou branca na pare inferior das imagens*/
 .no-text-shadow {
   text-shadow: none !important;
 }
 
+/* Texto-shadow branca para mostrar em imagens escuras*/
 .white-text-shadow {
   text-shadow: 3px 3px 4px #ffffff !important;
 }
 
+/* Texto de ação (call to action) de determinado article de um Flow */
 .article-copy {
   position: absolute;
   bottom: 1.6rem;
@@ -333,20 +375,24 @@ h4.link:hover {
   cursor: pointer;
 }
 
+/* Título de uma página interna, a principal definição é o letter-spacing */
 .title {
   font-family: Museo500;
   letter-spacing: 1px;
 }
 
+/* Subtítulo de uma página interna */
 .subtitle {
   font-family: Museo300;
   letter-spacing: 1px;
 }
 
+/* Classe helper para ajuste da altura de linha da fonte */
 .line-height-1 {
   line-height: 1;
 }
 
+/* Classe helper para definição da cor da fonte */
 .text-red {
   color: #ed2241;
 }
@@ -355,6 +401,7 @@ h4.link:hover {
   color: #333333 !important;
 }
 
+/* Definição dos motions da imagens dos articles de cada flow */
 .slick-slide img {
   z-index: -1;
   transition: all 500ms;
@@ -368,10 +415,12 @@ h4.link:hover {
   -webkit-transform: scale(1.05);
 }
 
+/* Tamanho da fonte do tooltip dos ícones do menu lateral */
 .tooltip {
   font-size: 12px;
 }
 
+/* Borda utilizada na coluna da página de oportunidades */
 .box-oportunidades {
   border-left-color:  #000000;
   border-left-style: solid;
@@ -384,7 +433,7 @@ h4.link:hover {
   }
 }
 
-/* Custom font */
+/* Fontes customizadas para a Museo */
 @font-face {
   font-family: Museo700;
   src: url(../fonts/museo/Museo700-Regular.otf);
@@ -400,6 +449,7 @@ h4.link:hover {
   src: url(../fonts/museo/Museo300-Regular.otf);
 }
 
+/* Definição do footer padrão */
 footer {
   margin-left: 65px;
   background-color: #0b020b;
@@ -408,6 +458,7 @@ footer {
   letter-spacing: 1px;
 }
 
+/* Definição da borda e espaçamento do Help Desk no footer*/
 #helpdesk {
   border-color: #ed2241;
   border-style: solid;
